@@ -35,7 +35,9 @@ def circle():
     text.tag_config('title', font=('Times', 14), foreground='pink')
 	
 def delete():
- canvas.delete("all")
+ canvas.coords(c, (0, 0, 0, 0))
+ canvas.coords(r, (0, 0, 0, 0))
+ canvas.coords(t, (0, 0, 0, 0, 0, 0))
  text.delete(1.0, END)
 
 win = Tk()
